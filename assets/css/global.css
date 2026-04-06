@@ -1,0 +1,60 @@
+
+:root {
+  --h1: #F2A49E;
+  --h2: #8C3933;
+  --h3: #54221E;
+  --b1: #FFFFFF;
+  --b2: #818181;
+  --b3: #000000;
+}
+
+
+
+
+p, a, h1, h2, h3, h4, h5, h6 {
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.crimsonPro {
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.txt-normal { font-weight: 400; }
+.txt-bold { font-weight: 700; }
+
+.bg-h1{ background-color: var(--h1);}
+.bg-h2{ background-color: var(--h2);}
+.bg-h3{ background-color: var(--h3);}
+.bg-b1{ background-color: var(--b1);}
+.bg-b2{ background-color: var(--b2);}
+.bg-b3{ background-color: var(--b3);}
+
+.color-h1{ color: var(--h1);}
+.color-h2{ color: var(--h2);}
+.color-h3{ color: var(--h3);}
+.color-b1{ color: var(--b1);}
+.color-b2{ color: var(--b2);}
+.color-b3{ color: var(--b3);}
+
+.bg-img-center {
+  background-size: cover; 
+  background-position: center;
+}
+
+.ativeTransparence:active{ transition: none; opacity: 70%; }
+
+
+
+
+* {
+  transition: all 0.5s ease-in;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
