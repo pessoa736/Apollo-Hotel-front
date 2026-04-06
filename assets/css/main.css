@@ -1,0 +1,45 @@
+/* -- Global -- */
+@import "global.css";
+
+body {
+    font-family: var(--font-family);
+    background: var(--b1-color);
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+}
+
+.navbar-content {
+    height: 104px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px;
+
+    background: var(--h2-color);
+
+    font-size: 32px;
+
+}
+
+.brand-navbar img {
+    height: 56px;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+    align-items: center;
+    
+    list-style: none;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: var(--b1-color);
+}
