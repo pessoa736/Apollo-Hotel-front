@@ -1,15 +1,45 @@
-
-:root {
-  --h1: #F2A49E;
-  --h2: #8C3933;
-  --h3: #54221E;
-  --b1: #FFFFFF;
-  --b2: #818181;
-  --b3: #000000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+* {
+  transition: all 0.5s ease-in;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+}
 
+/* Variaveis */
+
+:root {
+    --h1: #F2A49E;
+    --h2: #8C3933;
+    --h3: #54221E;
+    --b1: #FFFFFF;
+    --b2: #818181;
+    --b3: #000000;
+    
+    --font-family: 'CrimsonPro', sans-serif;
+}   
+
+/* Fontes */
+
+@font-face {
+  font-family: 'CrimsonPro';
+  src: url('../fonts/CrimsonPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CrimsonPro';
+  src: url('../fonts/CrimsonPro-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
 
 p, a, h1, h2, h3, h4, h5, h6 {
   font-family: "Crimson Pro", serif;
@@ -46,15 +76,3 @@ p, a, h1, h2, h3, h4, h5, h6 {
 }
 
 .ativeTransparence:active{ transition: none; opacity: 70%; }
-
-
-
-
-* {
-  transition: all 0.5s ease-in;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
