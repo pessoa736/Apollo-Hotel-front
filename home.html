@@ -4,60 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
-    <!-- popper -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-    
-    <!-- jquerry -->
-     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
-
-     
     <!-- os sources do projeto -->
-    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/home.css">
 
     <title>home</title>
 </head>
 <body>
 
-    <!-- header :P -->
-    <header 
-        class="sticky-top bg-h2"
-    >
-        <div 
-            class="nav py-4 d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row flex-nowrap align-items-center justify-content-between gap-5"
-            style="padding-inline: clamp(1rem, 3vw, 9rem);"
-        >
-            <a href="#">
-                <img 
-                    src="assets/images/Logo.png" 
-                    style="max-height: 104px;"
-                />
+    <!-- Navbar :P -->
+    <div class="custom-navbar">
+        <nav class="navbar-content">
+            
+            <!-- logo -->
+            <a href="#" class="brand-navbar">
+                <img src="../assets/icons/Logo.svg" alt="Logo">
             </a>
 
-            <a class="nav-link p-0 color-b1 txt-normal"  href="#"><h1>Home</h1></a>
-            <a class="nav-link p-0 color-b1 txt-normal"  href="#"><h1>Blogs</h1></a>
-            <a class="nav-link p-0 color-b1 txt-normal"  href="#"><h1>sobre nós</h1></a>
+            <!-- Menu -->
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="../blog.html">Blog</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="../about.html">Sobre Nós</a>
+                </li>
+                
+            </ul>
+            
+            <a href="#" class="btn-nav">Fazer Reserva</a>
+            
+            
+            
+        </nav>
+    </div>
 
-            <button 
-                class="bg-h3 border-0 px-4 py-3 crimsonPro ativeTransparence txt-bold color-b1 text-nowrap"
-                id="Reserve_Buttom"
-                style=" font-size: 28pt; line-height: 100%; word-spacing: 0; border-radius: 10px; flex-flow: row;"
-            >
-                Fazer Reserva
-            </button>
-        </div>
-    </header>
+    <main>
+        <section class="hero">
+            <h1>Sobre Nós</h1>
+            <p>Conheça a história por trás de nosso Hotel!</p>
+        </section>
+    </main>
 
     <!-- section 1 -->
-    <section 
-        class="bg-img-center"
-        style="background: linear-gradient( #000a, #000a), url(assets/images/pexels-pexels-user-snowflake-2152146014-36220947\ 1.png); background-size: cover; background-position: center; background-attachment: absolute; max-height: 810px; min-height: 405;"
-    >
+    <section class="bg-img-center" style="background: linear-gradient( #000a, #000a), url(assets/images/pexels-pexels-user-snowflake-2152146014-36220947\ 1.png); background-size: cover; background-position: center; background-attachment: absolute; max-height: 810px; min-height: 405;">
         <div 
             class="container justify-content-center d-flex flex-column align-items-center text-center"
             style="padding-block: 200px;"
@@ -125,6 +117,53 @@
             </div>
         </div>
     </section>
+
+     <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="infos">
+        <div class="redes">
+          <img src="../assets/icons/logo.png" alt="Apollo Hotel" class="logo" />
+
+          <div class="rede">
+            <img src="../assets/icons/instagram.png" alt="Instagram" />
+            <span>@ApolloHotel</span>
+          </div>
+
+          <div class="rede">
+            <img src="../assets/icons/facebook.png" alt="Facebook" />
+            <span>ApolloHotel</span>
+          </div>
+        </div>
+
+        <div class="contatos">
+          <div class="contato">
+            <img src="../assets/icons/telefone.png" alt="Telefone" />
+            <span>+377 92 50 65 00</span>
+          </div>
+
+          <div class="contato">
+            <img src="../assets/icons/email.png" alt="E-mail" />
+            <span>apollohotel@ejectufrn.com.br</span>
+          </div>
+
+          <div class="contato">
+            <img src="../assets/icons/local.png" alt="Endereço" />
+            <span>Pl. du Casino, 98000 Monaco, Mônaco</span>
+          </div>
+        </div>
+
+        <div class="localizacao">
+          <img src="../assets/images/localização.png" alt="Mapa de localização" />
+        </div>
+      </div>
+
+      <div class="copy">
+        <div class="text">
+          <span>2026 - MISSÃO EJECT</span>
+          <img src="../assets/icons/eject.png" alt="EJECT" />
+        </div>
+      </div>
+    </footer>
 
 
     <script>
