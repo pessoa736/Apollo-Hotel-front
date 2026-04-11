@@ -117,6 +117,8 @@ main h2 {
 .card .infos {
   position: absolute;
   bottom: 24px;
+  left: 24px;
+  right: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,10 +127,10 @@ main h2 {
 .data {
   font-size: 25px;
   color: var(--h2);
-  padding-right: 160px;
+  padding-right: 0;
 }
 
-.card button {
+.card .infos button {
   padding: 12px 24px;
   background: var(--h3);
   color: var(--b1);
@@ -137,6 +139,8 @@ main h2 {
   font-size: 24px;
   cursor: pointer;
   transition: 0.3s;
+  white-space: nowrap;
+  min-width: max-content;
 }
 
 .card button:hover {

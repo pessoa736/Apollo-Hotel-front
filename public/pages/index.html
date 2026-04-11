@@ -28,7 +28,7 @@
             <a href="./" class="btn-nav">Home</a>
             <a href="./blog.html" class="btn-nav">Blog</a>
             <a href="./sobre.html" class="btn-nav">Sobre Nós</a>
-            <a href="" class="btn-nav reserva">Fazer Reserva</a>
+            <a href="" class="btn-nav reserva open-booking">Fazer Reserva</a>
           </div>
         </ul>
       </nav>
@@ -173,6 +173,71 @@
       </div>
     </footer>
 
+    <!-- OVERLAY -->
+    <div id="bookingModal" class="modal-overlay">
+      <div class="modal">
+        <button class="close-modal">&times;</button>
+
+        <h1 class="logo">Apollo <span>Hotel</span></h1>
+
+        <form class="booking-form">
+          <label>Nome Completo</label>
+          <input type="text" placeholder="Digite aqui" />
+
+          <div class="dates">
+            <div>
+              <label>Data de entrada</label>
+              <input type="date" />
+            </div>
+
+            <div>
+              <label>Data de saída</label>
+              <input type="date" />
+            </div>
+          </div>
+
+          <label>Categoria de acomodação</label>
+          <select>
+            <option>Suíte Prince</option>
+            <option>Suíte Master</option>
+            <option>Quarto Luxo</option>
+          </select>
+
+          <div class="people">
+            <div class="counter">
+              <label>Adultos</label>
+              <div class="counter-box">
+                <button type="button" class="minus">-</button>
+                <span>2</span>
+                <button type="button" class="plus">+</button>
+              </div>
+            </div>
+
+            <div class="counter">
+              <label>Crianças</label>
+              <div class="counter-box">
+                <button type="button" class="minus">-</button>
+                <span>0</span>
+                <button type="button" class="plus">+</button>
+              </div>
+            </div>
+          </div>
+
+          <button class="reserve-btn">Fazer Reserva</button>
+        </form>
+      </div>
+    </div>
+    <div id="f1-widget" class="f1-widget">
+      <button id="closeF1" class="f1-close">✕</button>
+
+      <div class="f1-content">
+        <span class="f1-title">Próxima corrida F1</span>
+        <span class="f1-race">Grande Prêmio</span>
+
+        <div id="f1-countdown" class="f1-countdown">00d 00h 00m 00s</div>
+      </div>
+    </div>
+
     <script>
       const hamburger = document.getElementById("hamburger");
       const menu = document.getElementById("menu");
@@ -182,5 +247,6 @@
       });
     </script>
     <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/modal.js"></script>
   </body>
 </html>
