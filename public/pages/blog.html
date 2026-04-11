@@ -8,17 +8,8 @@
       name="description"
       content="Dicas de viagens e destinos do Apollo Hotel"
     />
-    <link rel="stylesheet" href="../src/assets/css/blog.css" />
-    <link
-      rel="stylesheet"
-      href="../src/assets/css/blog-notebook.css"
-      media="(max-width: 1766px)"
-    />
-    <link
-      rel="stylesheet"
-      href="../src/assets/css/blog-mobile.css"
-      media="(max-width: 768px)"
-    />
+    <link rel="stylesheet" href="../../assets/css/blog.css" />
+    <link rel="stylesheet" href="../../assets/css/global.css" />
   </head>
 
   <body>
@@ -26,8 +17,8 @@
     <header>
       <nav>
         <ul class="nav-bar">
-          <div class="logo">
-            <img src="../src/images/logo.png" alt="Apollo Hotel" />
+          <div class="logo" onclick="window.location.href = './'">
+            <img src="../../src/images/logo.png" alt="Apollo Hotel" />
           </div>
 
           <!-- BOTÃO HAMBURGER -->
@@ -39,10 +30,10 @@
 
           <!-- MENU -->
           <div class="menu" id="menu">
-            <a href="#" class="btn-nav">Home</a>
-            <a href="#" class="btn-nav">Blog</a>
-            <a href="#" class="btn-nav">Sobre Nós</a>
-            <a href="#" class="btn-nav reserva">Fazer Reserva</a>
+            <a href="./" class="btn-nav">Home</a>
+            <a href="./blog.html" class="btn-nav">Blog</a>
+            <a href="./sobre.html" class="btn-nav">Sobre Nós</a>
+            <a href="" class="btn-nav reserva">Fazer Reserva</a>
           </div>
         </ul>
       </nav>
@@ -68,7 +59,7 @@
         <!-- CARD 1 -->
         <article class="card">
           <div class="img">
-            <img src="../src/images/card-img.png" alt="Teatro em Mônaco" />
+            <img src="../../src/images/card-img.png" alt="Teatro em Mônaco" />
           </div>
 
           <div class="card-body">
@@ -80,7 +71,12 @@
 
             <div class="infos">
               <time class="data" datetime="2026-03-25">25/03/2026</time>
-              <button type="button">Ler Mais</button>
+              <button
+                type="button"
+                onclick="window.location.href = './detalhes.html'"
+              >
+                Ler Mais
+              </button>
             </div>
           </div>
         </article>
@@ -88,7 +84,7 @@
         <!-- CARD 2 -->
         <article class="card">
           <div class="img">
-            <img src="../src/images/card-img.png" alt="Destino romântico" />
+            <img src="../../src/images/card-img.png" alt="Destino romântico" />
           </div>
 
           <div class="card-body">
@@ -97,7 +93,12 @@
 
             <div class="infos">
               <time class="data" datetime="2026-03-25">25/03/2026</time>
-              <button type="button">Ler Mais</button>
+              <button
+                type="button"
+                onclick="window.location.href = './detalhes.html'"
+              >
+                Ler Mais
+              </button>
             </div>
           </div>
         </article>
@@ -105,7 +106,7 @@
         <!-- CARD 3 -->
         <article class="card">
           <div class="img">
-            <img src="../src/images/card-img.png" alt="Hotel luxuoso" />
+            <img src="../../src/images/card-img.png" alt="Hotel luxuoso" />
           </div>
 
           <div class="card-body">
@@ -114,7 +115,12 @@
 
             <div class="infos">
               <time class="data" datetime="2026-03-25">25/03/2026</time>
-              <button type="button">Ler Mais</button>
+              <button
+                type="button"
+                onclick="window.location.href = './detalhes.html'"
+              >
+                Ler Mais
+              </button>
             </div>
           </div>
         </article>
@@ -122,7 +128,10 @@
         <!-- CARD 4 -->
         <article class="card">
           <div class="img">
-            <img src="../src/images/card-img.png" alt="Viagem internacional" />
+            <img
+              src="../../src/images/card-img.png"
+              alt="Viagem internacional"
+            />
           </div>
 
           <div class="card-body">
@@ -131,7 +140,12 @@
 
             <div class="infos">
               <time class="data" datetime="2026-03-25">25/03/2026</time>
-              <button type="button">Ler Mais</button>
+              <button
+                type="button"
+                onclick="window.location.href = './detalhes.html'"
+              >
+                Ler Mais
+              </button>
             </div>
           </div>
         </article>
@@ -142,45 +156,52 @@
     <footer>
       <div class="infos">
         <div class="redes">
-          <img src="../src/images/logo.png" alt="Apollo Hotel" class="logo" />
+          <img
+            src="../../src/images/logo.png"
+            alt="Apollo Hotel"
+            class="logo"
+          />
 
           <div class="rede">
-            <img src="../src/images/instagram.png" alt="Instagram" />
+            <img src="../../src/images/instagram.png" alt="Instagram" />
             <span>@ApolloHotel</span>
           </div>
 
           <div class="rede">
-            <img src="../src/images/facebook.png" alt="Facebook" />
+            <img src="../../src/images/facebook.png" alt="Facebook" />
             <span>ApolloHotel</span>
           </div>
         </div>
 
         <div class="contatos">
           <div class="contato">
-            <img src="../src/images/telefone.png" alt="Telefone" />
+            <img src="../../src/images/telefone.png" alt="Telefone" />
             <span>+377 92 50 65 00</span>
           </div>
 
           <div class="contato">
-            <img src="../src/images/email.png" alt="E-mail" />
+            <img src="../../src/images/email.png" alt="E-mail" />
             <span>apollohotel@ejectufrn.com.br</span>
           </div>
 
           <div class="contato">
-            <img src="../src/images/local.png" alt="Endereço" />
+            <img src="../../src/images/local.png" alt="Endereço" />
             <span>Pl. du Casino, 98000 Monaco, Mônaco</span>
           </div>
         </div>
 
         <div class="localizacao">
-          <img src="../src/images/localização.png" alt="Mapa de localização" />
+          <img
+            src="../../src/images/localização.png"
+            alt="Mapa de localização"
+          />
         </div>
       </div>
 
       <div class="copy">
         <div class="text">
           <span>2026 - MISSÃO EJECT</span>
-          <img src="../src/images/eject.png" alt="EJECT" />
+          <img src="../../src/images/eject.png" alt="EJECT" />
         </div>
       </div>
     </footer>
