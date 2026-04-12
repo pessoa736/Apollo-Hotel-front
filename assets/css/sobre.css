@@ -1,0 +1,217 @@
+/* HERO */
+.hero-sobre {
+  text-align: center;
+  padding: 90px 20px;
+  background: var(--h1);
+  color: var(--h2);
+}
+.hero-sobre h1 {
+  font-size: 80px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.hero-sobre p {
+  font-size: 40px;
+}
+
+/* HISTÓRIA */
+.historia {
+  background: var(--h2);
+  padding: 80px 10%;
+}
+.historia-container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.historia-texto {
+  flex: 1;
+  color: var(--b1);
+}
+.historia-texto p {
+  font-size: 34px;
+  text-indent: 80px;
+  margin-bottom: 80px;
+}
+.historia-texto p strong {
+  font-size: 44px;
+}
+.historia-imagens {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.historia-imagens img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* CARDS */
+.mvv {
+  background: var(--h3);
+  padding: 70px 10%;
+}
+.cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.card {
+  background: var(--h2);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 320px;
+  color: var(--b1);
+  font-size: 36px;
+}
+
+/* EQUIPE */
+.equipe {
+  background: var(--h1);
+  text-align: center;
+  padding: 80px 10%;
+  color: var(--h3);
+  font-size: 40px;
+}
+.equipe-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+.membro img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* SERVIÇOS */
+.servicos {
+  background: var(--h2);
+  text-align: center;
+  padding: 80px 10%;
+  color: var(--b1);
+  font-size: 40px;
+}
+.servicos-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.servico {
+  background: var(--b1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.servico img {
+  width: 100%;
+}
+.servico span {
+  display: block;
+  padding: 15px;
+  color: var(--h3);
+  font-size: 40px;
+}
+
+/* ================= NOTEBOOK ================= */
+@media (max-width: 1768px) {
+  .hero-sobre h1 {
+    font-size: 56px;
+  }
+  .hero-sobre p {
+    font-size: 26px;
+  }
+
+  .historia-texto p {
+    font-size: 22px;
+    text-indent: 40px;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    font-size: 22px;
+  }
+  .equipe,
+  .servicos {
+    font-size: 28px;
+  }
+  .servico span {
+    font-size: 26px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  /* HERO */
+  .hero-sobre {
+    padding: 60px 20px;
+  }
+
+  .hero-sobre h1 {
+    font-size: 34px;
+  }
+
+  .hero-sobre p {
+    font-size: 18px;
+  }
+
+  /* HISTÓRIA */
+  .historia {
+    padding: 60px 25px;
+  }
+
+  .historia-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .historia-texto p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  /* CARDS */
+  .mvv {
+    padding: 60px 25px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    padding: 25px;
+    font-size: 18px;
+  }
+
+  /* EQUIPE */
+  .equipe {
+    padding: 60px 25px;
+    font-size: 26px;
+  }
+
+  .equipe-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* SERVIÇOS */
+  .servicos {
+    padding: 60px 25px;
+    font-size: 26px;
+  }
+
+  .servicos-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servico span {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../assets/css/home.css" />
+    <title>Apollo Hotel | Home</title>
+  </head>
+  <body>
+    <!-- ================= HEADER / NAV ================= -->
+    <header>
+      <nav>
+        <ul class="nav-bar">
+          <div class="logo" onclick="window.location.href = './'">
+            <img src="../../src/images/logo.png" alt="Apollo Hotel" />
+          </div>
+
+          <!-- BOTÃO HAMBURGER -->
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <!-- MENU -->
+          <div class="menu" id="menu">
+            <a href="./" class="btn-nav">Home</a>
+            <a href="./blog.html" class="btn-nav">Blog</a>
+            <a href="./sobre.html" class="btn-nav">Sobre Nós</a>
+            <a href="" class="btn-nav reserva open-booking">Fazer Reserva</a>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Seu próximo hotel favorito</h1>
+        <p>No coração de Mônaco, torne sua viagem inesquecível</p>
+        <a href="#" class="btn-primary">Fazer Reserva</a>
+      </div>
+    </section>
+
+    <!-- ================= BENEFÍCIOS ================= -->
+    <section class="beneficios">
+      <h2>Aproveite o melhor de Mônaco</h2>
+
+      <div class="cards-beneficios">
+        <div class="card-beneficio">
+          <img src="../../assets/images/conforto.png" alt="Conforto" />
+          <span>Conforto</span>
+        </div>
+
+        <div class="card-beneficio">
+          <img src="../../assets/images/localizacao.png" alt="Localização" />
+          <span>Localização</span>
+        </div>
+
+        <div class="card-beneficio">
+          <img
+            src="../../assets/images/entretenimento.png"
+            alt="Entretenimento"
+          />
+          <span>Entretenimento</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PACOTES ================= -->
+    <section class="pacotes">
+      <div class="pacotes-content">
+        <div class="pacotes-texto">
+          <h2>Conheça nossos pacotes especiais</h2>
+          <p>Descubra várias oportunidades com até 30% de desconto!</p>
+          <a href="#" class="btn-primary">Saiba mais</a>
+        </div>
+
+        <div class="pacotes-imagens">
+          <img src="../../assets/images/cassino.png" />
+          <img src="../../assets/images/formula1.png" />
+          <img src="../../assets/images/localizacao.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALERIA ================= -->
+    <section class="galeria">
+      <h2>Galeria</h2>
+
+      <div class="galeria-slider">
+        <button class="arrow left" id="prev">&#10094;</button>
+
+        <div class="slider-container">
+          <div class="slider-track" id="sliderTrack">
+            <div class="slide">
+              <img src="../../assets/images/slide1.png" />
+              <span
+                >Aproveite uma das mais luxuosas vidas noturnas do mundo</span
+              >
+            </div>
+
+            <div class="slide">
+              <img src="../../assets/images/slide2.png" />
+              <span>Experiência única e sofisticada</span>
+            </div>
+
+            <div class="slide">
+              <img src="../../assets/images/slide3.png" />
+              <span>O luxo que você merece</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="arrow right" id="next">&#10095;</button>
+      </div>
+
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="infos">
+        <div class="redes">
+          <img
+            src="../../src/images/logo.png"
+            alt="Apollo Hotel"
+            class="logo"
+          />
+
+          <div class="rede">
+            <img src="../../src/images/instagram.png" alt="Instagram" />
+            <span>@ApolloHotel</span>
+          </div>
+
+          <div class="rede">
+            <img src="../../src/images/facebook.png" alt="Facebook" />
+            <span>ApolloHotel</span>
+          </div>
+        </div>
+
+        <div class="contatos">
+          <div class="contato">
+            <img src="../../src/images/telefone.png" alt="Telefone" />
+            <span>+377 92 50 65 00</span>
+          </div>
+
+          <div class="contato">
+            <img src="../../src/images/email.png" alt="E-mail" />
+            <span>apollohotel@ejectufrn.com.br</span>
+          </div>
+
+          <div class="contato">
+            <img src="../../src/images/local.png" alt="Endereço" />
+            <span>Pl. du Casino, 98000 Monaco, Mônaco</span>
+          </div>
+        </div>
+
+        <div class="localizacao">
+          <img
+            src="../../src/images/localização.png"
+            alt="Mapa de localização"
+          />
+        </div>
+      </div>
+
+      <div class="copy">
+        <div class="text">
+          <span>2026 - MISSÃO EJECT</span>
+          <img src="../../src/images/eject.png" alt="EJECT" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- OVERLAY -->
+    <div id="bookingModal" class="modal-overlay">
+      <div class="modal">
+        <button class="close-modal">&times;</button>
+
+        <h1 class="logo">Apollo <span>Hotel</span></h1>
+
+        <form class="booking-form">
+          <label>Nome Completo</label>
+          <input type="text" placeholder="Digite aqui" />
+
+          <div class="dates">
+            <div>
+              <label>Data de entrada</label>
+              <input type="date" />
+            </div>
+
+            <div>
+              <label>Data de saída</label>
+              <input type="date" />
+            </div>
+          </div>
+
+          <label>Categoria de acomodação</label>
+          <select>
+            <option>Suíte Prince</option>
+            <option>Suíte Master</option>
+            <option>Quarto Luxo</option>
+          </select>
+
+          <div class="people">
+            <div class="counter">
+              <label>Adultos</label>
+              <div class="counter-box">
+                <button type="button" class="minus">-</button>
+                <span>2</span>
+                <button type="button" class="plus">+</button>
+              </div>
+            </div>
+
+            <div class="counter">
+              <label>Crianças</label>
+              <div class="counter-box">
+                <button type="button" class="minus">-</button>
+                <span>0</span>
+                <button type="button" class="plus">+</button>
+              </div>
+            </div>
+          </div>
+
+          <button class="reserve-btn">Fazer Reserva</button>
+        </form>
+      </div>
+    </div>
+    <div id="f1-widget" class="f1-widget">
+      <button id="closeF1" class="f1-close">✕</button>
+
+      <div class="f1-content">
+        <span class="f1-title">Próxima corrida F1</span>
+        <span class="f1-race">Grande Prêmio</span>
+
+        <div id="f1-countdown" class="f1-countdown">00d 00h 00m 00s</div>
+      </div>
+    </div>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.getElementById("menu");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/modal.js"></script>
+  </body>
+</html>
